@@ -1,7 +1,7 @@
 .container {
     background: rgb(68, 68, 68);
-    width: 160px;
-    height: 160px;
+    width: 300px;
+    height: 300px;
 
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +9,6 @@
 
 .square {
     background: rgb(4, 233, 73);
-    width: 10px;
-    height: 10px;
+    flex: auto;
+    flex-basis: 18.75px;
 }

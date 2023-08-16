@@ -10,11 +10,16 @@ let container = document.createElement("div");
 container.classList.add("container")
 body.append(container)
 
-for (let i = 0; i < 256; i++) {
-    let square = document.createElement("div")
-    square.classList.add("square")
-    container.appendChild(square)
-    square.addEventListener("mouseover", () => {
-        square.style.cssText = "background: brown;"
-    })
+createSquares(16)
+
+function createSquares(sideSize) {
+    let numberOfSquares = sideSize*sideSize
+    for (let i = 0; i < numberOfSquares; i++) {
+        let square = document.createElement("div")
+        square.classList.add("square")
+        container.appendChild(square)
+        square.addEventListener("mouseover", () => {
+            square.style.cssText = "background: brown;"
+        })
+    }
 }
